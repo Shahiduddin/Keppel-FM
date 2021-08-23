@@ -2,7 +2,7 @@
 $content = getContent('online.content', true);
 @endphp
 <!-- online section start -->
-<section class="online-section pt-50 pb-50 position-relative z-index2 overflow-hidden">
+<!-- <section class="online-section pt-50 pb-50 position-relative z-index2 overflow-hidden">
     <div class="section-shape opacity--10"><img
             src="{{ sectionImage('online', $content->data_values->background_image) }}" alt="@lang('image')"></div>
 
@@ -142,7 +142,7 @@ $content = getContent('online.content', true);
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- online section end -->
 
 
