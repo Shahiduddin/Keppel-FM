@@ -34,10 +34,16 @@
                   <li><a href="{{route('pages',$page->slug)}}">{{__($page->name)}}</a></li>
               @endforeach
              
-              <li><a href="{{route('events')}}">@lang('Events')</a></li>
-              <li><a href="{{route('jockey')}}">@lang('Our Jockey')</a></li>
-              <li><a href="{{route('contact')}}">@lang('Contact us')</a></li>
-
+              <li><a href="{{route('events')}}">@lang('Archive Events')</a></li>
+              <li><a href="{{route('jockey')}}">@lang('All Jockey')</a></li>
+              <li><a href="{{route('contact')}}">@lang('Contact')</a></li>
+              <li class="nav-right">
+                <select name="language" class="langSel select">
+                  @foreach ($language as $lang)    
+                  <option value="{{$lang->code}}" {{session('lang') == $lang->code ? 'selected' : ''}}>{{__($lang->name)}}</option>
+                  @endforeach
+                </select>
+              </li>
             </ul>
           </div>
         </nav>
