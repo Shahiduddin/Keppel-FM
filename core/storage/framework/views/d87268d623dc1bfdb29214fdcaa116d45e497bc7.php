@@ -150,12 +150,7 @@
 
                 
 
-                <li class="sidebar-menu-item <?php echo e(menuActive('admin.frontend.manage.pages')); ?>">
-                    <a href="<?php echo e(route('admin.frontend.manage.pages')); ?>" class="nav-link ">
-                        <i class="menu-icon la la-list"></i>
-                        <span class="menu-title"><?php echo app('translator')->get('Manage Pages'); ?></span>
-                    </a>
-                </li>
+                
 
                 <li class="sidebar-menu-item sidebar-dropdown">
                     <a href="javascript:void(0)" class="<?php echo e(menuActive('admin.frontend.sections*',3)); ?>">
