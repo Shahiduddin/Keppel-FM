@@ -24,7 +24,7 @@
     <!-- hero section end -->
 
 
-
+  
 
     <?php if($sections->secs != null): ?>
         <?php $__currentLoopData = json_decode($sections->secs); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sec): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -36,8 +36,7 @@
 
 <?php $__env->startPush('style'); ?>
     <style>
-   
-
+        
         .custom-radio {
             position: relative;
             padding-left: 0;
@@ -116,9 +115,17 @@
     </style>
 <?php $__env->stopPush(); ?>
 
+<?php $__env->startPush('script'); ?>
+    <script>
+        'use strict'
+        $('.poll-open-btn').on('click', function() {
+            $('.poll-box').addClass('active');
+        });
+        $('.poll-close-btn').on('click', function() {
+            $('.poll-box').removeClass('active');
+        });
 
+    </script>
+<?php $__env->stopPush(); ?>
 
- 
-
-  
 <?php echo $__env->make($activeTemplate.'layouts.frontend', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Xampp\htdocs\keppelfm\core\resources\views/templates/basic/home.blade.php ENDPATH**/ ?>

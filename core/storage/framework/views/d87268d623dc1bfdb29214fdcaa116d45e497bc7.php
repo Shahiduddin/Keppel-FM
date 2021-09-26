@@ -115,42 +115,13 @@
 
               
 
-                <li class="sidebar-menu-item sidebar-dropdown">
-                    <a href="javascript:void(0)" class="<?php echo e(menuActive('admin.email.template*',3)); ?>">
-                        <i class="menu-icon la la-envelope-o"></i>
-                        <span class="menu-title"><?php echo app('translator')->get('Email Manager'); ?></span>
-                    </a>
-                    <div class="sidebar-submenu <?php echo e(menuActive('admin.email.template*',2)); ?> ">
-                        <ul>
-
-                            <li class="sidebar-menu-item <?php echo e(menuActive('admin.email.template.global')); ?> ">
-                                <a href="<?php echo e(route('admin.email.template.global')); ?>" class="nav-link">
-                                    <i class="menu-icon las la-dot-circle"></i>
-                                    <span class="menu-title"><?php echo app('translator')->get('Global Template'); ?></span>
-                                </a>
-                            </li>
-                            <li class="sidebar-menu-item <?php echo e(menuActive(['admin.email.template.index','admin.email.template.edit'])); ?> ">
-                                <a href="<?php echo e(route('admin.email.template.index')); ?>" class="nav-link">
-                                    <i class="menu-icon las la-dot-circle"></i>
-                                    <span class="menu-title"><?php echo app('translator')->get('Email Templates'); ?></span>
-                                </a>
-                            </li>
-
-                            <li class="sidebar-menu-item <?php echo e(menuActive('admin.email.template.setting')); ?> ">
-                                <a href="<?php echo e(route('admin.email.template.setting')); ?>" class="nav-link">
-                                    <i class="menu-icon las la-dot-circle"></i>
-                                    <span class="menu-title"><?php echo app('translator')->get('Email Configure'); ?></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                
 
                 <li class="sidebar__menu-header"><?php echo app('translator')->get('Frontend Manager'); ?></li>
 
                 
 
-                
+               
 
                 <li class="sidebar-menu-item sidebar-dropdown">
                     <a href="javascript:void(0)" class="<?php echo e(menuActive('admin.frontend.sections*',3)); ?>">
@@ -180,10 +151,7 @@
             </ul>
 
 
-            <div class="text-center mb-3 text-uppercase">
-                <span class="text--primary"><?php echo e(systemDetails()['name']); ?></span>
-                <span class="text--success">V<?php echo e(systemDetails()['version']); ?> </span>
-            </div>
+          
 
 
         </div>

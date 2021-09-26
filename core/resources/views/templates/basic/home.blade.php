@@ -25,7 +25,7 @@
     <!-- hero section end -->
 
 
-
+  
 
     @if ($sections->secs != null)
         @foreach (json_decode($sections->secs) as $sec)
@@ -37,8 +37,7 @@
 
 @push('style')
     <style>
-   
-
+        
         .custom-radio {
             position: relative;
             padding-left: 0;
@@ -117,8 +116,15 @@
     </style>
 @endpush
 
+@push('script')
+    <script>
+        'use strict'
+        $('.poll-open-btn').on('click', function() {
+            $('.poll-box').addClass('active');
+        });
+        $('.poll-close-btn').on('click', function() {
+            $('.poll-box').removeClass('active');
+        });
 
-
- 
-
-  
+    </script>
+@endpush
