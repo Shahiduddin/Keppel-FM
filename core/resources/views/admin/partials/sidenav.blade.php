@@ -51,11 +51,11 @@
                         <i class="menu-icon las la-calendar"></i>
                         <span class="menu-title">@lang('Manage Event')</span>
 
-                          @if($archive_event > 0)
+                          <!-- @if($archive_event > 0)
                             <span class="menu-badge pill bg--primary ml-auto">
                                 <i class="fa fa-exclamation"></i>
                             </span>
-                        @endif
+                        @endif -->
 
                     </a>
                     <div class="sidebar-submenu {{menuActive('admin.event*',2)}} ">
@@ -68,15 +68,7 @@
                                 </a>
                             </li>
 
-                             <li class="sidebar-menu-item {{menuActive('admin.event.archive')}} ">
-                                <a href="{{route('admin.event.archive')}}" class="nav-link">
-                                    <i class="menu-icon las la-dot-circle"></i>
-                                    <span class="menu-title">@lang('Archive Event')</span>
-                                    @if(0 < $archive_event)
-                                        <span class="menu-badge pill bg--primary ml-auto">{{$archive_event}}</span>
-                                    @endif
-                                </a>
-                            </li>
+                            
 
                         </ul>
                     </div>

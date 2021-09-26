@@ -51,11 +51,11 @@
                         <i class="menu-icon las la-calendar"></i>
                         <span class="menu-title"><?php echo app('translator')->get('Manage Event'); ?></span>
 
-                          <?php if($archive_event > 0): ?>
+                          <!-- <?php if($archive_event > 0): ?>
                             <span class="menu-badge pill bg--primary ml-auto">
                                 <i class="fa fa-exclamation"></i>
                             </span>
-                        <?php endif; ?>
+                        <?php endif; ?> -->
 
                     </a>
                     <div class="sidebar-submenu <?php echo e(menuActive('admin.event*',2)); ?> ">
@@ -68,15 +68,7 @@
                                 </a>
                             </li>
 
-                             <li class="sidebar-menu-item <?php echo e(menuActive('admin.event.archive')); ?> ">
-                                <a href="<?php echo e(route('admin.event.archive')); ?>" class="nav-link">
-                                    <i class="menu-icon las la-dot-circle"></i>
-                                    <span class="menu-title"><?php echo app('translator')->get('Archive Event'); ?></span>
-                                    <?php if(0 < $archive_event): ?>
-                                        <span class="menu-badge pill bg--primary ml-auto"><?php echo e($archive_event); ?></span>
-                                    <?php endif; ?>
-                                </a>
-                            </li>
+                            
 
                         </ul>
                     </div>
